@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 class Tests {
-
     @Test
     @DisplayName("1234 -> 10")
     void t1() {
