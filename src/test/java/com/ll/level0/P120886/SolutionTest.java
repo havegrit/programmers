@@ -11,4 +11,9 @@ class SolutionTest {
     void t1() {
         assertThat(new Solution().solution("olleh","hello")).isEqualTo(1);
     }
+    @Test
+    @DisplayName("allpe, apple	=> 0")
+    void t2() {
+        assertThat(new Solution().solution("allpe","apple")).isEqualTo(0);
+    }
 }
