@@ -12,4 +12,9 @@ class SolutionTest {
     void t1() {
         assertThat(new Solution().solution(3628800)).isEqualTo(10);
     }
+    @Test
+    @DisplayName("7 => 3")
+    void t2() {
+        assertThat(new Solution().solution(7)).isEqualTo(3);
+    }
 }
