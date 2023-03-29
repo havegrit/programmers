@@ -1,0 +1,24 @@
+package com.ll.level0.P120864;
+
+public class Solution {
+    public int solution(String my_string) {
+        int answer = 0;
+        StringBuilder num = new StringBuilder();
+        try {
+            Integer.parseInt(my_string);
+        } catch (NumberFormatException e) {
+            for (int i = 0; i < my_string.length(); i++) {
+                if (Character.isDigit(my_string.charAt(i))) {
+                    num.append(my_string.charAt(i));
+                } else {
+                    if(num.length() > 0) {
+                        answer += Integer.parseInt(num.toString());
+                        num.setLength(0);
+                    }
+                }
+            }
+            return answer;
+        }
+        return Integer.parseInt(my_string);
+    }
+}
