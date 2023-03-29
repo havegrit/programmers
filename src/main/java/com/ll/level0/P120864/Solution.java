@@ -17,6 +17,7 @@ public class Solution {
                     }
                 }
             }
+            answer+=Integer.parseInt(num.toString());
             return answer;
         }
         return Integer.parseInt(my_string);
