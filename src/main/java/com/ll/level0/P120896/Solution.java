@@ -10,8 +10,10 @@ public class Solution {
                 s = s.replaceAll(Character.toString(s.charAt(i)), " ");
             }
         }
-        s = s.replaceAll(" ", "");
-        s = Arrays.stream(s.split("")).sorted().collect(Collectors.joining());
+        s = Arrays.stream(s.replaceAll(" ", "")
+                .split(""))
+                .sorted()
+                .collect(Collectors.joining());
         return s;
     }
 }

@@ -22,4 +22,19 @@ class SolutionTest {
     void t3() {
         assertThat(new Solution().solution("hello")).isEqualTo("eho");
     }
+    @Test
+    @DisplayName("aaa => ")
+    void t4() {
+        assertThat(new Solution().solution("aaa")).isEqualTo("");
+    }
+    @Test
+    @DisplayName("a => a")
+    void t5() {
+        assertThat(new Solution().solution("a")).isEqualTo("a");
+    }
+    @Test
+    @DisplayName("xyzz => xy")
+    void t6() {
+        assertThat(new Solution().solution("xyzz")).isEqualTo("xy");
+    }
 }
