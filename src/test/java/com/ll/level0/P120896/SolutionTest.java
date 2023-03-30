@@ -15,7 +15,7 @@ class SolutionTest {
     @Test
     @DisplayName("abdc => abdc")
     void t2() {
-        assertThat(new Solution().solution("abdc")).isEqualTo("abdc");
+        assertThat(new Solution().solution("abdc")).isEqualTo("abcd");
     }
     @Test
     @DisplayName("hello => eho")

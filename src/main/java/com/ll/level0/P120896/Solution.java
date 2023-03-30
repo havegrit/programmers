@@ -1,5 +1,8 @@
 package com.ll.level0.P120896;
 
+import java.util.Arrays;
+import java.util.stream.Collectors;
+
 public class Solution {
     public String solution(String s) {
         for (int i = 0; i < s.length()-1; i++) {
@@ -7,6 +10,8 @@ public class Solution {
                 s = s.replaceAll(Character.toString(s.charAt(i)), " ");
             }
         }
-        return s.stripIndent();
+        s = s.replaceAll(" ", "");
+        s = Arrays.stream(s.split("")).sorted().collect(Collectors.joining());
+        return s;
     }
 }
